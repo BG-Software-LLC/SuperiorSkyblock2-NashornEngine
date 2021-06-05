@@ -12,10 +12,11 @@ import java.util.Arrays;
 
 public final class NashornScript implements IScriptEngine {
 
-    private static final NashornScript instance = new NashornScript();
     private static final String[] JAVASCRIPT_ENGINE_NAMES = new String[] {
             "js", "JS", "javascript", "JavaScript", "ecmascript", "ECMAScript", "nashorn", "Nashorn"
     };
+
+    private static final NashornScript instance = new NashornScript();
 
     public static NashornScript getInstance() {
         return instance;
