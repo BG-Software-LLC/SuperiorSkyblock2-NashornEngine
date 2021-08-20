@@ -1,12 +1,17 @@
 plugins {
     id 'java'
-    id 'maven'
     id 'com.github.johnrengelman.shadow' version '6.1.0'
     id 'maven-publish'
 }
 
 group 'SuperiorSkyblock2-NashornEngine'
 version = "1.0.2"
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(16))
+    }
+}
 
 subprojects {
     apply plugin: 'java'
