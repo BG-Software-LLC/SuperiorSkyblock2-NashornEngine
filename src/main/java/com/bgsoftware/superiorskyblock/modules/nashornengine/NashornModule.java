@@ -2,6 +2,7 @@ package com.bgsoftware.superiorskyblock.modules.nashornengine;
 
 import com.bgsoftware.superiorskyblock.api.SuperiorSkyblock;
 import com.bgsoftware.superiorskyblock.api.commands.SuperiorCommand;
+import com.bgsoftware.superiorskyblock.api.modules.ModuleLoadTime;
 import com.bgsoftware.superiorskyblock.api.modules.PluginModule;
 import com.bgsoftware.superiorskyblock.scripts.NashornScript;
 import org.bukkit.event.Listener;
@@ -40,6 +41,11 @@ public final class NashornModule extends PluginModule {
     @Override
     public SuperiorCommand[] getSuperiorAdminCommands(SuperiorSkyblock superiorSkyblock) {
         return null;
+    }
+
+    @Override
+    public ModuleLoadTime getLoadTime() {
+        return ModuleLoadTime.BEFORE_WORLD_CREATION;
     }
 
 }
