@@ -6,6 +6,6 @@ This is mainly used in Java15/16, as these java versions removed Nashorn from be
 
 ## How to install
 
-Simply download the jar and put it in your modules folder.
+Download link: https://hub.bg-software.com/job/SuperiorSkyblock%20Addons/
 
 If you can't find the modules folder, make sure you upgrade to latest [dev build](https://hub.bg-software.com/job/SuperiorSkyblock2/).
